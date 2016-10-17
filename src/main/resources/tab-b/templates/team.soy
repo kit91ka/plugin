@@ -1,0 +1,36 @@
+{namespace JIRA.Templates.Team}
+
+/**
+ * @param team
+ */
+{template .teamRow}
+<td class="project-config-team-name">
+        {$team.name}
+    </td>
+    <td class="project-config-team-created">
+        {$team.created}
+    </td>
+    <td class="jira-restfultable-operations">
+    <ul class="first ops">
+        <li class="last">
+            <a class="project-config-team-delete button first last" href="#">Delete</a>
+        </li>
+    </ul>
+    </td>
+{/template}
+
+/**
+ * @param team
+ */
+{template .editTeamRow}
+<td>
+    <input name="name" id="project-config-team-name-input" type="text" class="text"
+             value="{$team.name ? $team.name : ''}"/>
+</td>
+<td class="project-config-team-created">
+    <input class="aui-date-picker" id="demo-range-always" type="date" max="2025-01-05" min="2015-12-25" />
+</td>
+<td class="project-config-team-name">
+    <button class="aui-button aui-button-primary"> Submit </button>
+</td>
+{/template}

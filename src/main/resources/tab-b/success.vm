@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Laboratory plugin</title>
+    <meta name="projectKey" content="$project.getKey()"/>
+    <meta name="projectId" content="$project.getId()"/>
+    $webResourceManager.requireResourcesForContext("my-resources")
+</head>
+<body>
+<br>
+<br>
+<div class="aui-tabs vertical-tabs" role="application">
+    <ul class="tabs-menu" role="tablist">
+        <li class="menu-item active-pane" role="presentation">
+            <a href="#tabs-example-first" id="aui-uid-1-1433245398252" role="tab" aria-selected="true"><strong>Tab A</strong></a>
+        </li>
+        <li class="menu-item" role="presentation">
+            <a href="#tabs-example-second" id="aui-uid-0-1433245398252" role="tab" aria-selected="true"><strong>Tab B</strong></a>
+        </li>
+        <li class="menu-item" role="presentation">
+            <a href="#tabs-example-third" id="aui-uid-0-1433245398252" role="tab" aria-selected="true"><strong>Tab C</strong></a>
+        </li>
+
+    </ul>
+    <div class="tabs-pane active-pane" id="tabs-example-first" role="tabpanel" aria-hidden="false">
+        <h2>This is Tab 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="tabs-pane" id="tabs-example-second" role="tabpanel" aria-hidden="false">
+        <h2> </h2>
+            <table id="project-config-teams-table">
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+    </div>
+    <div class="tabs-pane" id="tabs-example-third" role="tabpanel" aria-hidden="true">
+        <h2>This is Tab 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+</body>
+</html>
